@@ -1,0 +1,208 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+h1 {
+ text-align: center;
+ color: red;
+    font-size: 3.8rem;
+    font-family: "Krub", serif;
+      font-weight: bold;
+    
+    }
+h2 {
+    text-align: center;
+    color: red;
+    font-size: 3rem;
+    font-family: "Krub", serif;
+      font-weight: bold;
+}
+body {
+    
+    font-size: 16px;
+    font-family: "Krub", serif;
+    background-image: url(/imagenes/pexels-photo-8849272.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-attachment: fixed;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.boton { 
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    
+}
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.sombra { 
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+-moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+background-color: var(--blanco);
+padding: 2rem;
+border-radius: 1rem;
+
+
+}
+
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+   
+    display: flex;
+    flex-direction: column;
+    
+
+}
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.navegacion-principal a {
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+text-decoration: none;
+font-size: 2rem;
+font-weight: 700;
+padding: 1rem;
+
+}
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+/* HERO */
+.hero { 
+    background-image: url(../imagenes/club_de_lectura_ensayos_para_la_reflexion.jpg);
+    background-repeat: no-repeat;
+    color: var(--blanco);
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+  
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgb(0,0,0, 70%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Servicios */
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    }
+.servicio {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+.servicio h3 {
+    color: var(--secundario);
+font-weight: 400;
+
+
+}
+.servicio p { 
+    line-height: 2;
+
+}
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nuestros_servicios { 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.destacado {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 1.5em; /* Espaciado entre párrafos */
+        line-height: 1.6;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+.sombra2 { 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+.body2 {
+    background-image: url(/imagenes/pexels-photo-8849272.webp);
+}
+
+ul {
+    list-style-type: disc; /* Cambia el estilo de las viñetas: disc, circle, square, etc. */
+    margin-left: 20px; /* Añade espacio a la izquierda */
+    line-height: 1.6; /* Mejora el espaciado entre líneas */
+}
+
+li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+/* tarea 3*/
+/* Estilos por clase */
+.euro {
+    color: #007BFF;
+  }
+  .dolar {
+    color: #28A745;
+  }
+
+  .libra {
+    color: #FFC107;
+  }
+
+  .yen {
+    color: #DC3545;
+  }
